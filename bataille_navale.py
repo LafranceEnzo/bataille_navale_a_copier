@@ -205,10 +205,12 @@ def sauvegarder_partie(plateau, taille_grille, nombre_tir):
     taille_grille = 10
     nombre_tir = 0
     with open("sauvegarde.txt", "w", encoding='utf-8') as file:
-        file.write(str(taille_grille))  # mette len(plateau ici)
-        file.write("\n")
-        file.write(str(nombre_tir))
-        file.write("\n")
+        for i in range (len(plateau)):
+            file.write(str(taille_grille))  # mette len(plateau ici)
+            file.write("\n")
+            file.write(str(nombre_tir))
+            file.write("\n")
+    return plateau
 
 
 if __name__ == "__main__":
