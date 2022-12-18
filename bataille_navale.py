@@ -246,11 +246,10 @@ if __name__ == "__main__":
         j = (int)(input('Numéro de colonne entre 1 et {} : '.format(len(plateau))))
 
         # On vérifie les coordonnées.
-        if ((i < 0) or (j < 0) or (i > len(plateau)) or (j > len(plateau))):
-            print('************************************')
-            print('Problème de coordonnées')
-            print('Les coordonnées doivent être entre 1 et', len(plateau))
-            print('************************************')
+        if (i < 0) or (j < 0):
+            plateau = sauvegarder_partie(plateau, taille_grille, nombre_tir)
+        elif (i > len(plateau)) or (j > len(plateau)):
+            plateau = chargement_partie(plateau)
         else:
             # Si tout est OK, on tire ! BOUM ! ou pas...
             tir(plateau, (i-1, j-1))
