@@ -1,4 +1,4 @@
-# Contributeur : Rémi Synave
+# Contributeur : Rémi Synave, Enzo Lafrance
 
 
 """

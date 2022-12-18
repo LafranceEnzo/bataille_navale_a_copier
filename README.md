@@ -1,4 +1,4 @@
-Auteur : Rémi Synave
+Auteur : Rémi Synave, Enzo Lafrance
 
 Ce code a été développé pour la ressource R1.01 à l'IUT de Calais dans le cadre d'un TP sur la qualité du code.
 
