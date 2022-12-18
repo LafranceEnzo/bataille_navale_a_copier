@@ -212,6 +212,13 @@ def sauvegarder_partie(plateau, taille_grille, nombre_tir):
             file.write("\n")
     return plateau
 
+def chargement_partie(plateau):
+    taille_grille = 10
+    plateau = creer_plateau_vide(taille_grille)
+    nombre_tir = 0
+    remplir_plateau(plateau)
+    afficher_plateau_jeu(plateau)
+    return (plateau)
 
 if __name__ == "__main__":
     # Initialisations
